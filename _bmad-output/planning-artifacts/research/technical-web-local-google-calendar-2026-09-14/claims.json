@@ -1,0 +1,14 @@
+[
+  {"claim":"Node.js + SPA + SQLite architecture","class":"architecture","pub_date":"2026-09-14"},
+  {"claim":"Loopback and server-side security controls","class":"security","pub_date":"2025-11-29"},
+  {"claim":"Google Web Server OAuth localhost flow","class":"version/compatibility","pub_date":"2026-09-14"},
+  {"claim":"OAuth model distinction","class":"version/compatibility","pub_date":"2026-09-14"},
+  {"claim":"Calendar event reminders and recurrence fields","class":"version/compatibility","pub_date":"2026-07-07"},
+  {"claim":"Incremental sync and 410 recovery","class":"version/compatibility","pub_date":"2026-09-11"},
+  {"claim":"Calendar quotas and backoff","class":"quantitative","pub_date":"2026-09-11"},
+  {"claim":"Private Network Access status","class":"security","pub_date":"2024-09-26"},
+  {"claim":"Node child_process shell input risk","class":"security","pub_date":"2026-09-14"},
+  {"claim":"Node Single Executable Applications status","class":"version/compatibility","pub_date":"2026-09-14"},
+  {"claim":"SQLite source of truth recommendation","class":"architecture","pub_date":"2026-09-14"},
+  {"claim":"Recurrence and conflict risk","class":"architecture","pub_date":"2026-09-11"}
+]

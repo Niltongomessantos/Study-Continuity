@@ -1,0 +1,26 @@
+# Local tooling and editor state
+.vscode/
+.idea/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Runtime and build output
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# Temporary BMAD work products
+_bmad-output/**/.working/
+_bmad-output/**/reviews/
+
+# Local caches and temporary files
+.tmp/
+tmp/
+*.tmp
+.DS_Store
+Thumbs.db
