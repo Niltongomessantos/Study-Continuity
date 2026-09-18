@@ -41,4 +41,4 @@ So that I can maintain a flexible study routine without changing unrelated sessi
 
 ## References
 
-FR-11, FR-14, FR-15, NFR-3, NFR-5, AD-1, AD-2, AD-8, AD-9, AD-12, UX-DR4, UX-DR6, UX-DR9, UX-DR10.
+FR-11, FR-14, FR-15, NFR-3, NFR-5, AD-1, AD-2, AD-8, AD-9, AD-12, UX-DR4, UX-DR6, UX-DR9, UX-DR10, Nilton
