@@ -1,0 +1,26 @@
+- id: "1-1"
+  title: Initialize the Local Study Application
+  description: >-
+    Open the Study AI browser app locally with the React/Vite starter and
+    IndexedDB persistence port initialized, per SPEC.md CAP-2/CAP-6.
+  spec_checkpoint: false
+  done_checkpoint: true
+  invoke_dev_with: >-
+    Set up TypeScript/React/Vite starter and hexagonal folder structure per
+    ARCHITECTURE-SPINE.md.
+- id: "1-2"
+  title: Create an Explicitly Typed Study Session
+  description: >-
+    Create a Managed Lesson or Free Block with required planned time and
+    duration, persisted atomically per SPEC.md CAP-2.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: ""
+- id: "1-3"
+  title: Restore Local Study Sessions
+  description: >-
+    Reload committed Sessions, timing, recurrence, replacements, materials,
+    and lifecycle events from IndexedDB on reopen, per SPEC.md CAP-6.
+  spec_checkpoint: false
+  done_checkpoint: true
+  invoke_dev_with: ""
