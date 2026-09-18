@@ -1,0 +1,26 @@
+name: BMad - Sincronizar Histórias com o GitHub Projects
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '_bmad-output/specs/**/stories/*.md'
+
+jobs:
+  sync-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    
+    steps:
+      - name: Fazer o Checkout do Código
+        uses: actions/checkout@v4
+
+      - name: Preparar e Executar o Script
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x scripts/sync-bmad-issues.sh
+          ./scripts/sync-bmad-issues.sh
