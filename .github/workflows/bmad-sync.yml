@@ -1,14 +1,16 @@
 name: BMad - Sincronizar Histórias com o GitHub Projects
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-    paths:
-      - '_bmad-output/specs/**/stories/*.md'
+    types:
+      - closed
 
 jobs:
   sync-issues:
+    # Só executa se o PR foi integrado (merged) E a branch de origem começar com "docs/stories"
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'docs/stories')
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -22,5 +24,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          echo "Garantindo que a label 'story' existe..."
+          gh label create "story" --color "0E8A16" --force || true
+          
           chmod +x scripts/sync-bmad-issues.sh
           ./scripts/sync-bmad-issues.sh
